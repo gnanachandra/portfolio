@@ -36,7 +36,7 @@ const projectsData = [
     name: "File Sharing Application",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in euismod nisi, ac iaculis orci. Quisque scelerisque dapibus sapien, vel sagittis diam vulputate nec. Sed.",
-    image: "",
+    image: "./projects/filesharingapplication.png",
     techStack: [
       "HTML",
       "CSS",
