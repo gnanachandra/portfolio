@@ -1,24 +1,8 @@
 const projectsData = [
   {
-    name: "Vaaradhi Portal",
+    name: "Phoenix Coaching",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in euismod nisi, ac iaculis orci. Quisque scelerisque dapibus sapien, vel sagittis diam vulputate nec. Sed.",
-    image: "",
-    techStack: [
-      "React.js",
-      "TailwindCSS",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Redux Toolkit",
-      "Google Cloud",
-    ],
-    deployedLink: "",
-  },
-  {
-    name: "Phoenix Consultancy",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in euismod nisi, ac iaculis orci. Quisque scelerisque dapibus sapien, vel sagittis diam vulputate nec. Sed.",
+      "Developed a student management portal for Phoenix Educational Consultancy, solving the hassle of manual student data upkeep and Excel sheet handling. This user-friendly portal keeps track of student details, applied universities, and visa statuses, providing an efficient digital alternative.",
     image: "",
     techStack: [
       "React.js",
@@ -30,12 +14,11 @@ const projectsData = [
       "Material Tailwind",
       "AWS",
     ],
-    deployedLink: "",
   },
   {
     name: "File Sharing Application",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in euismod nisi, ac iaculis orci. Quisque scelerisque dapibus sapien, vel sagittis diam vulputate nec. Sed.",
+      "Developed a robust web application enabling users to share files with the help of a unique code and reduce the complex process. This code can be shared with others and they can download the file. Deployed the web application on Google Cloud App Engine, ensuring high availability and scalability",
     image: "./projects/filesharingapplication.png",
     techStack: [
       "HTML",
@@ -46,16 +29,50 @@ const projectsData = [
       "MongoDB",
       "Google cloud",
     ],
-    githubURL: "",
-    deployedLink: "",
+    deployedLink: "https://decent-glazing-373304.el.r.appspot.com/",
+    githubURL: "https://github.com/gnanachandra/File-Share",
   },
   {
-    name: "VconnectGlobe",
+    name: "Client Management Portal",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in euismod nisi, ac iaculis orci. Quisque scelerisque dapibus sapien, vel sagittis diam vulputate nec. Sed.",
+      "The Client Management Application is a robust system designed to streamline the organization of client information, branch details, and payment records. This dynamic tool empowers businesses to efficiently manage their client base with ease. ",
+    image: "",
+    techStack: [
+      "React.js",
+      "TailwindCSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Redux Toolkit",
+    ],
+    deployedLink: "https://s2win.vercel.app/",
+    githubURL: "https://github.com/gnanachandra/s2win",
+  },
+  {
+    name: "Student Portal",
+    description:
+      "Developing a student portal by Leveraging the power of MERN Stack and Google Cloud integration. authentication and registration for students, while admins have restricted access and control. Designed features for students to manage courses, internships, certificates, queries, announcements, and results; admins oversee and assist, and generate reports..",
+    image: "",
+    techStack: [
+      "React.js",
+      "TailwindCSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Redux Toolkit",
+      "Google Cloud",
+    ],
+    deployedLink: "https://course-tracker-vvit.vercel.app",
+    githubURL: "https://github.com/gnanachandra/course-tracker-vvit.git",
+  },
+  {
+    name: "Vconnect Globe",
+    description:
+      "Built a study abroad mentorship web application using React and Tailwind CSS, implementing responsive design. The client praised my technical and professional abilities and provided a glowing recommendation for future clients.",
     image: "",
     techStack: ["React.js", "TailwindCSS"],
-    deployedLink: "",
+    deployedLink: "https://vconnectglobe.com/",
+    githubURL: "https://github.com/gnanachandra/vconnectglobe/",
   },
 ];
 export default projectsData;

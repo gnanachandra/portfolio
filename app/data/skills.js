@@ -15,21 +15,6 @@ const SkillsData = [
     image: "./skills/javascript.png",
   },
   {
-    id: "4",
-    name: "Git",
-    image: "./skills/git.png",
-  },
-  {
-    id: "5",
-    name: "GitHub",
-    image: "./skills/github.png",
-  },
-  {
-    id: "6",
-    name: "MySQL",
-    image: "./skills/mysql.png",
-  },
-  {
     id: "7",
     name: "MongoDB",
     image: "./skills/mongodb.png",
@@ -55,9 +40,19 @@ const SkillsData = [
     image: "./skills/redux.png",
   },
   {
-    id: "12",
-    name: "Python",
-    image: "./skills/python.png",
+    id: "15",
+    name: "Tailwind",
+    image: "./skills/tailwind.png",
+  },
+  {
+    id: "4",
+    name: "Git",
+    image: "./skills/git.png",
+  },
+  {
+    id: "5",
+    name: "GitHub",
+    image: "./skills/github.png",
   },
   {
     id: "13",
@@ -65,15 +60,22 @@ const SkillsData = [
     image: "./skills/java.png",
   },
   {
+    id: "12",
+    name: "Python",
+    image: "./skills/python.png",
+  },
+  {
+    id: "6",
+    name: "MySQL",
+    image: "./skills/mysql.png",
+  },
+
+  {
     id: "14",
     name: "Linux",
     image: "./skills/linux.png",
   },
-  {
-    id: "15",
-    name: "Tailwind",
-    image: "./skills/tailwind.png",
-  },
+
   {
     id: "16",
     name: "AWS",
@@ -84,6 +86,16 @@ const SkillsData = [
     id: "17",
     name: "Google Cloud",
     image: "./skills/googlecloud.png",
+  },
+  {
+    id: "18",
+    name: "Nginx",
+    image: "./skills/nginx.png",
+  },
+  {
+    id: "19",
+    name: "Docker",
+    image: "./skills/docker.png",
   },
 ];
 

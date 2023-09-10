@@ -14,17 +14,14 @@ const menuItems = [
     to: "projects",
   },
   {
-    name: "Blogs",
-    to: "blogs",
-  },
-  {
-    name: "Experience",
-    to: "experience",
-  },
-  {
     name: "Skills",
     to: "skills",
   },
+  {
+    name: "Blogs",
+    to: "blogs",
+  },
+
   {
     name: "Contact",
     to: "contact",
@@ -33,9 +30,9 @@ const menuItems = [
 
 const Header = () => {
   return (
-    <nav className="fixed z-50 mx-auto block w-full   border border-white/80 bg-white py-3 px-4 text-white backdrop-blur-2xl backdrop-saturate-200 lg:px-4 lg:py-4">
+    <nav className="fixed z-50 mx-auto block w-full border border-white/80 bg-white py-3 px-4 text-white backdrop-blur-2xl backdrop-saturate-200 lg:px-4 lg:py-4">
       <div>
-        <div className="container mx-auto flex items-center justify-between text-gray-900">
+        <div className="px-4 mx-auto flex items-center justify-between text-gray-900">
           <a
             href="#"
             className="mr-4 block cursor-pointer py-1.5 font-sans text-sm lg:text-xl font-bold leading-normal text-inherit antialiased"

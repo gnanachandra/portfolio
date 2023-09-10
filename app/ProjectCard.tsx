@@ -38,29 +38,36 @@ const ProjectCard: React.FC<projectCardProps> = (props) => {
   const { name, description, image, deployedLink, githubURL, techStack } =
     props;
   return (
-    <Card className=" mx-auto">
+    <Card className="h-full mx-auto">
       <CardHeader>
         <img
-          src={ image ||
+          src={
+            image ||
             "https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
           }
           alt="projectImage"
           className="rounded-md"
         />
       </CardHeader>
-      <CardContent className="flex flex-col justify-between mt-2">
+      <CardContent className="flex flex-col justify-between mt-2 text-black">
         <CardTitle className="flex justify-between items-center leading-6">
           {name}
           <div className="flex gap-4">
-            <a href="">
-              <LinkIcon className="h-6 w-6 cursor-pointer" />
-            </a>
-            <a href="">
-              <FaGithub className="h-6 w-6 cursor-pointer" />
-            </a>
+            {deployedLink && (
+              <a href={deployedLink} target="_blank">
+                <LinkIcon className="h-6 w-6 cursor-pointer" />
+              </a>
+            )}
+            {githubURL && (
+              <a href={githubURL} target="_blank">
+                <FaGithub className="h-6 w-6 cursor-pointer" />
+              </a>
+            )}
           </div>
         </CardTitle>
-        <CardDescription className="mt-3">{description}</CardDescription>
+        <CardDescription className="mt-3 text-black">
+          {description}
+        </CardDescription>
         <div className="flex flex-wrap gap-2 mt-3">
           {techStack.map((item, index) => {
             return (

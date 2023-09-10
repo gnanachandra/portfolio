@@ -12,7 +12,7 @@ const Skills = () => {
               Skills
             </h1>
             <p className="text-lg font-medium leading-relaxed text-gray-500 ">
-              My Technical Experties
+            My Technical Expertise
             </p>
           </div>
           <div className="text-center flex justify-center flex-wrap border-t-gray-200  border-2  gap-5 px-2 py-4 md:p-5 md:gap-7 lg:gap-5 lg:p-5 xl:gap-10 xl:p-9">
