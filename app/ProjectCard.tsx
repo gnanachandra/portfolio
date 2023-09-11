@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 const colors: any = {
   "React.js": "#61dafb",

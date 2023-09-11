@@ -8,23 +8,28 @@ const menuItems = [
   {
     name: "About",
     to: "about",
+    offset: -20,
   },
   {
     name: "Projects",
     to: "projects",
+    offset: -20,
   },
   {
     name: "Skills",
     to: "skills",
+    offset: -70,
   },
   {
     name: "Blogs",
     to: "blogs",
+    offset: -30,
   },
 
   {
     name: "Contact",
     to: "contact",
+    offset: -40,
   },
 ];
 
@@ -43,9 +48,10 @@ const Header = () => {
             {menuItems.map((item) => (
               <li key={item.name}>
                 <Link
+                  offset={item.offset}
                   to={item.to}
                   smooth={true}
-                  duration={500}
+                  duration={700}
                   className="text-sm font-semibold text-gray-700 hover:text-black cursor-pointer hover:underline  px-2 hover:rounded-full hover:py-[0.3rem]"
                 >
                   {item.name}

@@ -10,11 +10,11 @@ const page = () => {
     <>
       <Header />
       <div className="py-2 px-4 lg:px-8 lg:py-4">
-        <About/>
+        <About />
         <Projects />
-        <Skills/>
-        <Blogs/>
-        <Contact/>
+        <Skills />
+        <Blogs />
+        <Contact />
       </div>
     </>
   );

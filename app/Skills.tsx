@@ -4,7 +4,7 @@ import React from "react";
 import skillsData from "./data/skills";
 const Skills = () => {
   return (
-    <div id="skills" className="my-10">
+    <div id="skills" >
       <section className="text-gray-600 body-font">
         <div className="mx-auto">
           <div className="flex flex-wrap w-full mb-4 flex-col items-center text-center md:mb-10">
