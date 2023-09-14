@@ -40,7 +40,7 @@ const Header = () => {
         <div className="px-4 mx-auto flex items-center justify-between text-gray-900">
           <a
             href="#"
-            className="mr-4 block cursor-pointer py-1.5 font-sans text-sm lg:text-xl font-bold leading-normal text-inherit antialiased"
+            className="mr-4 block cursor-pointer py-1.5 font-sans text-xl lg:text-xl font-bold leading-normal text-inherit antialiased"
           >
             <span>Gnana Chandra</span>
           </a>

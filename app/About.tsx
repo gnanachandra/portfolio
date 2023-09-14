@@ -23,7 +23,7 @@ const About = () => {
           technologies. I love building engaging and user-friendly digital
           experiences.
         </p>
-        <div className="flex gap-10">
+        <div className="flex gap-5 lg:gap-10">
           <a href="https://github.com/gnanachandra" target="_blank">
             <FaGithub
               size={25}
@@ -39,7 +39,7 @@ const About = () => {
               className="cursor-pointer hover:scale-125 duration-500"
             />
           </a>
-          <a href="https://www.instagram.com/gnana_vutukuri/" target="_blank">
+          <a href="https://www.instagram.com/gnana_vutukuri/" target="_blank" className="text-2xl">
             <FaInstagram
               size={25}
               className="cursor-pointer hover:scale-125 duration-500"
