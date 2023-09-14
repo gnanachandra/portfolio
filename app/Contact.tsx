@@ -45,12 +45,7 @@ const Contact = () => {
         },
         
       },
-      error: {
-        render({data})
-        {
-          return JSON.stringify(data)
-        }
-      }
+      error: "Something went wrong !"
     });
     if(isSubmitSuccessful)
     {
