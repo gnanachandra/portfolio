@@ -2,9 +2,9 @@ import EmailTemplate from '@/app/EmailTemplate';
 import { NextResponse } from 'next/server';
 import {Resend} from "resend"
 import * as React from 'react';
-import {RESEND_API_KEY} from "../../.././env"
 
-const resend = new Resend(RESEND_API_KEY);
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req:Request) {
    
