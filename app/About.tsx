@@ -26,7 +26,7 @@ const About = () => {
         <div className="flex gap-10">
           <a href="https://github.com/gnanachandra" target="_blank">
             <FaGithub
-              size={30}
+              size={25}
               className="cursor-pointer hover:scale-125 duration-500"
             />
           </a>
@@ -35,25 +35,25 @@ const About = () => {
             target="_blank"
           >
             <FaLinkedinIn
-              size={30}
+              size={25}
               className="cursor-pointer hover:scale-125 duration-500"
             />
           </a>
           <a href="https://www.instagram.com/gnana_vutukuri/" target="_blank">
             <FaInstagram
-              size={30}
+              size={25}
               className="cursor-pointer hover:scale-125 duration-500"
             />
           </a>
           <a href="https://twitter.com/gnanachandra30/">
             <FaTwitter
-              size={30}
+              size={25}
               className="cursor-pointer hover:scale-125 duration-500"
             />
           </a>
           <a href="https://www.facebook.com/gnana.vutukuri/">
             <FaFacebook
-              size={30}
+              size={25}
               className="cursor-pointer hover:scale-125 duration-500"
             />
           </a>

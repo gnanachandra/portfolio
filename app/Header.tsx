@@ -59,11 +59,19 @@ const Header = () => {
               </li>
             ))}
           </ul>
-          <Button className="hidden lg:block">
-            <p className="flex">
-              Resume <ArrowDownIcon className="h-5 w-5 ml-2"></ArrowDownIcon>
-            </p>
+
+          <Button className="hidden lg:block w-fit">
+            <a
+              href="./resume_11th_september.pdf"
+              download="Gnana Chandra Resume.pdf"
+            >
+              <p className="flex">
+                Resume
+                <ArrowDownIcon className="h-5 w-5 ml-2"></ArrowDownIcon>
+              </p>
+            </a>
           </Button>
+
           <button
             className="middle none relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] rounded-lg text-center font-sans text-xs font-medium uppercase text-blue-gray-500 transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:hidden"
             data-collapse-target="navbar"
@@ -75,6 +83,7 @@ const Header = () => {
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2"
+                color="red"
               >
                 <path
                   strokeLinecap="round"
@@ -89,26 +98,32 @@ const Header = () => {
           className="block h-0 w-full basis-full overflow-hidden text-blue-gray-900 transition-all duration-300 ease-in lg:hidden"
           data-collapse="navbar"
         >
-          <div className="container mx-auto pb-2">
+          <div className="pl-2 mx-auto pb-2">
             <ul className="mt-2 mb-4 flex flex-col gap-2">
               {menuItems.map((item) => (
-                <li key={item.name}>
+                <li key={item.name} data-collapse-target="navbar">
                   <Link
                     to={item.to}
                     smooth={true}
                     duration={500}
+                    data-collapse="navbar"
                     className="text-sm font-semibold text-gray-700 hover:text-black cursor-pointer   px-2 hover:rounded-full hover:py-[0.3rem]"
                   >
                     {item.name}
                   </Link>
                 </li>
               ))}
-              <Button className="block lg:hidden w-fit">
-                <p className="flex">
-                  Resume{" "}
-                  <ArrowDownIcon className="h-5 w-5 ml-2"></ArrowDownIcon>
-                </p>
-              </Button>
+              <a
+                href="./resume_11th_september.pdf"
+                download="Gnana Chandra Resume.pdf"
+              >
+                <Button className="block lg:hidden w-fit">
+                  <p className="flex">
+                    Resume
+                    <ArrowDownIcon className="h-5 w-5 ml-2"></ArrowDownIcon>
+                  </p>
+                </Button>
+              </a>
             </ul>
           </div>
         </div>

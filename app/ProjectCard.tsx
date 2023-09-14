@@ -38,15 +38,8 @@ const ProjectCard: React.FC<projectCardProps> = (props) => {
     props;
   return (
     <Card className="h-full mx-auto">
-      <CardHeader>
-        <img
-          src={
-            image ||
-            "https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
-          }
-          alt="projectImage"
-          className="rounded-md"
-        />
+      <CardHeader className="">
+        <img src={image} alt="projectImage" className="rounded-md border border-gray-400" />
       </CardHeader>
       <CardContent className="flex flex-col justify-between mt-2 text-black">
         <CardTitle className="flex justify-between items-center leading-6">
