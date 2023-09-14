@@ -2,7 +2,6 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
-import { useToast } from "@/components/ui/use-toast";
 import { toast } from "react-toastify";
 import axios from "axios";
 interface contactFormData {
@@ -34,7 +33,7 @@ const Contact = () => {
     clearErrors();
   }
   const send = async (data: contactFormData) => {
-    const response = await axios.post("https://portfolio-gnanachandra.vercel.app/api/send", data);
+    const response = await axios.post("http://localhost:3000/api/send", data);
     return response.data;
   };
   const sendEmail: SubmitHandler<contactFormData> = async (data) => {
@@ -46,7 +45,12 @@ const Contact = () => {
         },
         
       },
-      error: "Promise rejected 🤯",
+      error: {
+        render({data})
+        {
+          return JSON.stringify(data)
+        }
+      }
     });
     if(isSubmitSuccessful)
     {
