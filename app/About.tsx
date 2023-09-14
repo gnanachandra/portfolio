@@ -19,9 +19,7 @@ const About = () => {
           I&apos;m <span className="text-[#f4511e]">Gnana Chandra</span>
         </h1>
         <p className="text-lg font-medium">
-          I am a passionate developer with expertise in front-end and back-end
-          technologies. I love building engaging and user-friendly digital
-          experiences.
+        I am a dedicated full-stack developer with a strong affinity for cloud technologies. Continuously driven to expand my skill set, I thrive on embracing new challenges and staying at the forefront of emerging technologies.
         </p>
         <div className="flex gap-5 lg:gap-10">
           <a href="https://github.com/gnanachandra" target="_blank">
