@@ -62,7 +62,7 @@ const Header = () => {
 
           <Button className="hidden lg:block w-fit">
             <a
-              href="./resume_11th_september.pdf"
+              href="./Gnana_chandra_Vutukuri_Resume.pdf"
               download="Gnana Chandra Resume.pdf"
             >
               <p className="flex">
@@ -114,7 +114,7 @@ const Header = () => {
                 </li>
               ))}
               <a
-                href="./resume_11th_september.pdf"
+                href="./Gnana_chandra_Vutukuri_Resume.pdf"
                 download="Gnana Chandra Resume.pdf"
               >
                 <Button className="block lg:hidden w-fit">
