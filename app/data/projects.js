@@ -29,7 +29,7 @@ const projectsData = [
       "MongoDB",
       "Google cloud",
     ],
-    deployedLink: "https://decent-glazing-373304.el.r.appspot.com/",
+    deployedLink: "https://fileshare-dot-gnanachandra.el.r.appspot.com/",
     githubURL: "https://github.com/gnanachandra/File-Share",
   },
   {
@@ -72,7 +72,7 @@ const projectsData = [
     image: "./projects/vconnectglobe.png",
     techStack: ["React.js", "TailwindCSS"],
     deployedLink: "https://vconnectglobe.com/",
-    githubURL: "https://github.com/gnanachandra/vconnectglobe/",
+    
   },
 ];
 export default projectsData;
