@@ -1,9 +1,9 @@
 "use client";
-import React from "react";
-import Script from "next/script";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowDownIcon } from "@heroicons/react/20/solid";
+import { Download, Menu, X } from "lucide-react";
 import { Link } from "react-scroll";
+
 const menuItems = [
   {
     name: "About",
@@ -21,11 +21,15 @@ const menuItems = [
     offset: -70,
   },
   {
+    name: "Experience",
+    to: "experience",
+    offset: -70,
+  },
+  {
     name: "Blogs",
     to: "blogs",
     offset: -30,
   },
-
   {
     name: "Contact",
     to: "contact",
@@ -34,101 +38,126 @@ const menuItems = [
 ];
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
-    <nav className="fixed z-50 mx-auto block w-full border border-white/80 bg-white py-3 px-4 text-white backdrop-blur-2xl backdrop-saturate-200 lg:px-4 lg:py-4">
-      <div>
-        <div className="px-4 mx-auto flex items-center justify-between text-gray-900">
-          <a
-            href="#"
-            className="mr-4 block cursor-pointer py-1.5 font-sans text-xl lg:text-xl font-bold leading-normal text-inherit antialiased"
-          >
-            <span>Gnana Chandra</span>
-          </a>
-          <ul className="hidden items-center gap-6 lg:flex">
-            {menuItems.map((item) => (
-              <li key={item.name}>
+    <nav
+      className={`fixed top-0 z-50 w-full transition-all duration-300 ${
+        isScrolled
+          ? "bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-200"
+          : "bg-white/80 backdrop-blur-sm"
+      }`}>
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 lg:h-20">
+          {/* Logo */}
+          <div className="flex-shrink-0">
+            <a
+              href="#"
+              className="text-2xl font-bold text-transparent transition-all duration-300 lg:text-3xl bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text hover:from-orange-600 hover:to-red-600">
+              Gnana Chandra
+            </a>
+          </div>
+
+          {/* Desktop Navigation */}
+          <div className="hidden lg:block">
+            <div className="flex items-baseline ml-10 space-x-8">
+              {menuItems.map((item) => (
                 <Link
-                  offset={item.offset}
+                  key={item.name}
                   to={item.to}
                   smooth={true}
                   duration={700}
-                  className="text-sm font-semibold text-gray-700 hover:text-black cursor-pointer hover:underline  px-2 hover:rounded-full hover:py-[0.3rem]"
-                >
+                  offset={item.offset}
+                  className="relative px-3 py-2 text-sm font-semibold text-gray-700 transition-colors duration-300 cursor-pointer hover:text-orange-500 group">
                   {item.name}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-orange-500 to-red-500 group-hover:w-full transition-all duration-300"></span>
                 </Link>
-              </li>
-            ))}
-          </ul>
-
-          <Button className="hidden lg:block w-fit">
-            <a
-              href="./Gnana_chandra_Vutukuri_Resume.pdf"
-              download="Gnana Chandra Resume.pdf"
-            >
-              <p className="flex">
-                Resume
-                <ArrowDownIcon className="h-5 w-5 ml-2"></ArrowDownIcon>
-              </p>
-            </a>
-          </Button>
-
-          <button
-            className="middle none relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] rounded-lg text-center font-sans text-xs font-medium uppercase text-blue-gray-500 transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:hidden"
-            data-collapse-target="navbar"
-          >
-            <span className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 transform">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                color="red"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4 6h16M4 12h16M4 18h16"
-                ></path>
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="block h-0 w-full basis-full overflow-hidden text-blue-gray-900 transition-all duration-300 ease-in lg:hidden"
-          data-collapse="navbar"
-        >
-          <div className="pl-2 mx-auto pb-2">
-            <ul className="mt-2 mb-4 flex flex-col gap-2">
-              {menuItems.map((item) => (
-                <li key={item.name} data-collapse-target="navbar">
-                  <Link
-                    to={item.to}
-                    smooth={true}
-                    duration={500}
-                    data-collapse="navbar"
-                    className="text-sm font-semibold text-gray-700 hover:text-black cursor-pointer   px-2 hover:rounded-full hover:py-[0.3rem]"
-                  >
-                    {item.name}
-                  </Link>
-                </li>
               ))}
+            </div>
+          </div>
+
+          {/* Desktop Resume Button */}
+          <div className="hidden lg:block">
+            <Button
+              variant="outline"
+              className="text-orange-500 transition-all duration-300 border-2 border-orange-500 hover:bg-orange-500 hover:text-white"
+              asChild>
               <a
                 href="./Gnana_chandra_Vutukuri_Resume.pdf"
                 download="Gnana Chandra Resume.pdf"
-              >
-                <Button className="block lg:hidden w-fit">
-                  <p className="flex">
-                    Resume
-                    <ArrowDownIcon className="h-5 w-5 ml-2"></ArrowDownIcon>
-                  </p>
-                </Button>
+                className="flex items-center gap-2">
+                <Download size={16} />
+                Resume
               </a>
-            </ul>
+            </Button>
+          </div>
+
+          {/* Mobile menu button */}
+          <div className="lg:hidden">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={toggleMenu}
+              className="text-gray-700 hover:text-orange-500 hover:bg-orange-50">
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </Button>
+          </div>
+        </div>
+
+        {/* Mobile Navigation */}
+        <div
+          className={`lg:hidden transition-all duration-300 ease-in-out ${
+            isMenuOpen
+              ? "max-h-96 opacity-100 visible"
+              : "max-h-0 opacity-0 invisible"
+          } overflow-hidden`}>
+          <div className="px-2 pt-2 pb-6 space-y-1 rounded-b-lg shadow-lg bg-white/95 backdrop-blur-md">
+            {menuItems.map((item) => (
+              <Link
+                key={item.name}
+                to={item.to}
+                smooth={true}
+                duration={500}
+                offset={item.offset}
+                onClick={closeMenu}
+                className="block px-3 py-3 text-base font-semibold text-gray-700 transition-colors duration-300 rounded-md cursor-pointer hover:text-orange-500 hover:bg-orange-50">
+                {item.name}
+              </Link>
+            ))}
+            <div className="px-3 pt-4">
+              <Button
+                variant="outline"
+                className="w-full text-orange-500 transition-all duration-300 border-2 border-orange-500 hover:bg-orange-500 hover:text-white"
+                asChild>
+                <a
+                  href="./Gnana_chandra_Vutukuri_Resume.pdf"
+                  download="Gnana Chandra Resume.pdf"
+                  className="flex items-center justify-center gap-2">
+                  <Download size={16} />
+                  Download Resume
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </div>
-      <Script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></Script>
     </nav>
   );
 };

@@ -1,5 +1,21 @@
 const projectsData = [
   {
+    name: "Vconnect Globe",
+    description:
+      "Built a study abroad mentorship web application using React and Tailwind CSS, implementing responsive design. The client praised my technical and professional abilities and provided a glowing recommendation for future clients.",
+    image: "./projects/vconnectglobe.png",
+    techStack: ["React.js", "TailwindCSS"],
+    deployedLink: "https://vconnectglobe.com/",
+  },
+  {
+    name: "Vaaradhi Portal",
+    description:
+      "Built a study abroad mentorship web application using React and Tailwind CSS, implementing responsive design. The client praised my technical and professional abilities and provided a glowing recommendation for future clients.",
+    image: "./projects/vaaradhi-portal.png",
+    techStack: ["React.js", "TailwindCSS", "Node.js", "MongoDB", "Google Cloud","Express.js"],
+    deployedLink: "https://wayvaaradhi.com/",
+  },
+  {
     name: "Phoenix Coaching",
     description:
       "Developed a student management portal for Phoenix Educational Consultancy, solving the hassle of manual student data upkeep and Excel sheet handling. This user-friendly portal keeps track of student details, applied universities, and visa statuses, providing an efficient digital alternative.",
@@ -47,32 +63,6 @@ const projectsData = [
     ],
     deployedLink: "https://client-mangement-system.vercel.app/",
     githubURL: "https://github.com/gnanachandra/client-mangement-system",
-  },
-  // {
-  //   name: "Student Portal",
-  //   description:
-  //     "Developing a student portal by Leveraging the power of MERN Stack and Google Cloud integration. authentication and registration for students, while admins have restricted access and control. Designed features for students to manage courses, internships, certificates, queries, announcements, and results; admins oversee and assist, and generate reports..",
-  //   image: "",
-  //   techStack: [
-  //     "React.js",
-  //     "TailwindCSS",
-  //     "Node.js",
-  //     "Express.js",
-  //     "MongoDB",
-  //     "Redux Toolkit",
-  //     "Google Cloud",
-  //   ],
-  //   deployedLink: "https://course-tracker-vvit.vercel.app",
-  //   githubURL: "https://github.com/gnanachandra/course-tracker-vvit.git",
-  // },
-  {
-    name: "Vconnect Globe",
-    description:
-      "Built a study abroad mentorship web application using React and Tailwind CSS, implementing responsive design. The client praised my technical and professional abilities and provided a glowing recommendation for future clients.",
-    image: "./projects/vconnectglobe.png",
-    techStack: ["React.js", "TailwindCSS"],
-    deployedLink: "https://vconnectglobe.com/",
-    
   },
 ];
 export default projectsData;
