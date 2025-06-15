@@ -84,7 +84,7 @@ const Contact = () => {
             Let&apos;s Work Together
           </h2>
           <p className="max-w-2xl mx-auto text-xl text-gray-600">
-            Whether you have questions or you would just like to say hello, I'd
+            Whether you have questions or you would just like to say hello, I&apos;d
             love to hear from you.
           </p>
         </div>
@@ -131,7 +131,7 @@ const Contact = () => {
               <CardHeader>
                 <CardTitle className="text-2xl">Send me a message</CardTitle>
                 <CardDescription>
-                  Fill out the form below and I'll get back to you as soon as
+                  Fill out the form below and I&apos;ll get back to you as soon as
                   possible.
                 </CardDescription>
               </CardHeader>

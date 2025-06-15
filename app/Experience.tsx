@@ -114,9 +114,7 @@ const Experience = () => {
   };
 
   return (
-    <div
-      className="py-12 sm:py-16 lg:py-20 "
-      id="experience">
+    <div className="py-12 sm:py-16 lg:py-20 " id="experience">
       <div className="max-w-4xl px-4 mx-auto lg:max-w-6xl sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-12 text-center sm:mb-16">
@@ -129,8 +127,8 @@ const Experience = () => {
             Work Experience
           </h1>
           <p className="max-w-2xl px-4 mx-auto text-lg leading-relaxed text-gray-600 sm:text-xl">
-            My professional journey through various roles and the impact I've
-            made along the way.
+            My professional journey through various roles and the impact
+            I&apos;ve made along the way.
           </p>
           <div className="w-20 h-1 mx-auto mt-6 rounded-full bg-gradient-to-r from-orange-500 to-red-500"></div>
         </div>
@@ -246,7 +244,7 @@ const Experience = () => {
                       <p className="text-sm leading-relaxed text-gray-600 sm:text-base">
                         {experience.description}
                       </p>
-{/* 
+                      {/* 
                       <div>
                         <h4 className="flex items-center gap-2 mb-3 text-base font-semibold text-gray-900 sm:text-lg">
                           <Award
@@ -297,8 +295,6 @@ const Experience = () => {
             ))}
           </div>
         </div>
-
-    
 
         {/* Call to Action */}
         <div className="px-4 mt-12 text-center sm:mt-16">

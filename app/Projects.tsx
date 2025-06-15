@@ -3,9 +3,7 @@ import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   return (
-    <div
-      className="py-20"
-      id="projects">
+    <div className="py-20" id="projects">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-16 text-center">
@@ -47,7 +45,7 @@ const Projects = () => {
           <a
             href="#contact"
             className="inline-flex items-center px-6 py-3 font-semibold text-white transition-all duration-300 transform rounded-lg shadow-lg bg-gradient-to-r from-orange-500 to-red-500 hover:shadow-xl hover:scale-105">
-            Let's Collaborate
+            Let&apos;s Collaborate
           </a>
         </div>
       </div>
