@@ -7,14 +7,19 @@ const SkillsData = [
     name: "Spring Boot",
     image: "./skills/spring-boot.png",
   },
-  {
-    name: "AWS",
-    image: "./skills/aws.png",
+   {
+    name: "PL/SQL",
+    image: "./skills/pl-sql.png",
   },
   {
     name: "Google Cloud",
     image: "./skills/googlecloud.png",
   },
+  {
+    name: "AWS",
+    image: "./skills/aws.png",
+  },
+  
 
   {
     name: "MongoDB",
@@ -32,10 +37,7 @@ const SkillsData = [
     name: "Node",
     image: "./skills/node.png",
   },
-  {
-    name: "PL/SQL",
-    image: "./skills/pl-sql.png",
-  },
+ 
   {
     name: "Redux",
     image: "./skills/redux.png",
@@ -43,10 +45,6 @@ const SkillsData = [
   {
     name: "Tailwind",
     image: "./skills/tailwind.png",
-  },
-  {
-    name: "Git",
-    image: "./skills/git.png",
   },
   {
     name: "Linux",

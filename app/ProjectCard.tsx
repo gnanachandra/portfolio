@@ -15,6 +15,7 @@ const techColors: Record<string, string> = {
   "React.js": "bg-blue-100 text-blue-800 border-blue-200",
   "Node.js": "bg-green-100 text-green-800 border-green-200",
   "Express.js": "bg-gray-100 text-gray-800 border-gray-200",
+  "Spring Boot": "bg-green-200 text-green-800 border-green-200",
   MongoDB: "bg-green-100 text-green-800 border-green-200",
   HTML: "bg-orange-100 text-orange-800 border-orange-200",
   CSS: "bg-blue-100 text-blue-800 border-blue-200",
@@ -25,13 +26,16 @@ const techColors: Record<string, string> = {
   "Redux Toolkit": "bg-purple-100 text-purple-800 border-purple-200",
   "Tailwind CSS": "bg-cyan-100 text-cyan-800 border-cyan-200",
   "Material Tailwind": "bg-indigo-100 text-indigo-800 border-indigo-200",
-  "Next.js": "bg-gray-100 text-gray-800 border-gray-200",
+  "Next.js": "bg-black text-white border-gray-200",
   Python: "bg-blue-100 text-blue-800 border-blue-200",
   Django: "bg-green-100 text-green-800 border-green-200",
   PostgreSQL: "bg-blue-100 text-blue-800 border-blue-200",
   MySQL: "bg-orange-100 text-orange-800 border-orange-200",
   Docker: "bg-blue-100 text-blue-800 border-blue-200",
   Kubernetes: "bg-blue-100 text-blue-800 border-blue-200",
+  "AWS (SNS, SQS, SES)": "bg-orange-100 text-orange-800 border-orange-200",
+  OAuth: "bg-purple-100 text-purple-800 border-purple-200",
+  "TailwindCSS": "bg-cyan-100 text-cyan-800 border-cyan-200",
 };
 
 interface ProjectCardProps {
