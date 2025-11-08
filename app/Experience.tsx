@@ -145,7 +145,8 @@ const Experience = () => {
                 key={experience.id}
                 className={`relative flex items-start ${
                   index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
-                } flex-col lg:justify-between`}>
+                } flex-col lg:justify-between`}
+              >
                 {/* Timeline Dot - Mobile: left-aligned, Desktop: center-aligned */}
                 <div className="absolute left-0 z-10 hidden w-3 h-3 mt-6 bg-white border-orange-500 rounded-full shadow-lg md:block sm:left-6 lg:left-1/2 lg:transform lg:-translate-x-1/2 sm:w-4 sm:h-4 border-3 sm:border-4">
                   {experience.current && (
@@ -157,7 +158,8 @@ const Experience = () => {
                 <div
                   className={`w-full lg:w-5/12 sm:ml-14 lg:ml-0 ${
                     index % 2 === 0 ? "lg:mr-8" : "lg:ml-8"
-                  }`}>
+                  }`}
+                >
                   <div className="overflow-hidden transition-all duration-300 transform bg-white shadow-lg group rounded-xl sm:rounded-2xl hover:shadow-2xl hover:-translate-y-1">
                     {/* Card Header */}
                     <div className="p-4 border-b border-gray-100 bg-gradient-to-r from-orange-50 to-red-50 sm:p-6">
@@ -186,7 +188,8 @@ const Experience = () => {
                                   href={experience.companyWebsite}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="flex-shrink-0 text-orange-500 transition-colors duration-200 hover:text-orange-600">
+                                  className="flex-shrink-0 text-orange-500 transition-colors duration-200 hover:text-orange-600"
+                                >
                                   <ExternalLink
                                     size={14}
                                     className="sm:w-4 sm:h-4"
@@ -199,7 +202,8 @@ const Experience = () => {
                         <Badge
                           className={`${getTypeColor(
                             experience.type
-                          )} capitalize text-xs flex-shrink-0 self-start`}>
+                          )} capitalize text-xs flex-shrink-0 self-start`}
+                        >
                           {experience.type.replace("-", " ")}
                         </Badge>
                       </div>
@@ -279,7 +283,8 @@ const Experience = () => {
                             <Badge
                               key={techIndex}
                               variant="secondary"
-                              className="px-2 py-1 text-xs text-gray-700 transition-colors duration-200 bg-gray-100 hover:bg-orange-100 hover:text-orange-700 sm:text-sm">
+                              className="px-2 py-1 text-xs text-gray-700 transition-colors duration-200 bg-gray-100 hover:bg-orange-100 hover:text-orange-700 sm:text-sm"
+                            >
                               {tech}
                             </Badge>
                           ))}
@@ -304,11 +309,13 @@ const Experience = () => {
           <Button
             size="lg"
             className="w-full text-white transition-all duration-300 shadow-lg bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 hover:shadow-xl sm:w-auto"
-            asChild>
+            asChild
+          >
             <a
-              href="./Gnana_chandra_Vutukuri_Resume.pdf"
+              href="./Gnana_Chandra_Vutukuri_resume.pdf"
               download="Gnana Chandra Resume.pdf"
-              className="flex items-center justify-center gap-2 px-6 py-3">
+              className="flex items-center justify-center gap-2 px-6 py-3"
+            >
               Download Full Resume
             </a>
           </Button>

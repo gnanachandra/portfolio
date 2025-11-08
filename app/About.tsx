@@ -98,7 +98,7 @@ const About = () => {
                 className="transition-all duration-300 border-2 border-gray-300 hover:border-gray-400 hover:bg-gray-50"
                 asChild>
                 <a
-                  href="./Gnana_chandra_Vutukuri_Resume.pdf"
+                  href="./Gnana_Chandra_Vutukuri_resume.pdf"
                   download="Gnana Chandra Resume.pdf"
                   className="flex items-center gap-2">
                   <Download size={18} />

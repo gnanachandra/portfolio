@@ -63,14 +63,16 @@ const Header = () => {
         isScrolled
           ? "bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-200"
           : "bg-white/80 backdrop-blur-sm"
-      }`}>
+      }`}
+    >
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
             <a
               href="#"
-              className="text-2xl font-bold text-transparent transition-all duration-300 lg:text-3xl bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text hover:from-orange-600 hover:to-red-600">
+              className="text-2xl font-bold text-transparent transition-all duration-300 lg:text-3xl bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text hover:from-orange-600 hover:to-red-600"
+            >
               Gnana Chandra
             </a>
           </div>
@@ -85,7 +87,8 @@ const Header = () => {
                   smooth={true}
                   duration={700}
                   offset={item.offset}
-                  className="relative px-3 py-2 text-sm font-semibold text-gray-700 transition-colors duration-300 cursor-pointer hover:text-orange-500 group">
+                  className="relative px-3 py-2 text-sm font-semibold text-gray-700 transition-colors duration-300 cursor-pointer hover:text-orange-500 group"
+                >
                   {item.name}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-orange-500 to-red-500 group-hover:w-full transition-all duration-300"></span>
                 </Link>
@@ -98,11 +101,13 @@ const Header = () => {
             <Button
               variant="outline"
               className="text-orange-500 transition-all duration-300 border-2 border-orange-500 hover:bg-orange-500 hover:text-white"
-              asChild>
+              asChild
+            >
               <a
-                href="./Gnana_chandra_Vutukuri_Resume.pdf"
+                href="./Gnana_Chandra_Vutukuri_resume.pdf"
                 download="Gnana Chandra Resume.pdf"
-                className="flex items-center gap-2">
+                className="flex items-center gap-2"
+              >
                 <Download size={16} />
                 Resume
               </a>
@@ -115,7 +120,8 @@ const Header = () => {
               variant="ghost"
               size="sm"
               onClick={toggleMenu}
-              className="text-gray-700 hover:text-orange-500 hover:bg-orange-50">
+              className="text-gray-700 hover:text-orange-500 hover:bg-orange-50"
+            >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </Button>
           </div>
@@ -127,7 +133,8 @@ const Header = () => {
             isMenuOpen
               ? "max-h-96 opacity-100 visible"
               : "max-h-0 opacity-0 invisible"
-          } overflow-hidden`}>
+          } overflow-hidden`}
+        >
           <div className="px-2 pt-2 pb-6 space-y-1 rounded-b-lg shadow-lg bg-white/95 backdrop-blur-md">
             {menuItems.map((item) => (
               <Link
@@ -137,7 +144,8 @@ const Header = () => {
                 duration={500}
                 offset={item.offset}
                 onClick={closeMenu}
-                className="block px-3 py-3 text-base font-semibold text-gray-700 transition-colors duration-300 rounded-md cursor-pointer hover:text-orange-500 hover:bg-orange-50">
+                className="block px-3 py-3 text-base font-semibold text-gray-700 transition-colors duration-300 rounded-md cursor-pointer hover:text-orange-500 hover:bg-orange-50"
+              >
                 {item.name}
               </Link>
             ))}
@@ -145,11 +153,13 @@ const Header = () => {
               <Button
                 variant="outline"
                 className="w-full text-orange-500 transition-all duration-300 border-2 border-orange-500 hover:bg-orange-500 hover:text-white"
-                asChild>
+                asChild
+              >
                 <a
                   href="./Gnana_chandra_Vutukuri_Resume.pdf"
                   download="Gnana Chandra Resume.pdf"
-                  className="flex items-center justify-center gap-2">
+                  className="flex items-center justify-center gap-2"
+                >
                   <Download size={16} />
                   Download Resume
                 </a>
