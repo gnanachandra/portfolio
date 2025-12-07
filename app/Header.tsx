@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Download, Menu, X } from "lucide-react";
 import { Link } from "react-scroll";
+import { ResumeButton } from "./About";
 
 const menuItems = [
   {
@@ -97,22 +98,9 @@ const Header = () => {
           </div>
 
           {/* Desktop Resume Button */}
-          <div className="hidden lg:block">
-            <Button
-              variant="outline"
-              className="text-orange-500 transition-all duration-300 border-2 border-orange-500 hover:bg-orange-500 hover:text-white"
-              asChild
-            >
-              <a
-                href="./Gnana_Chandra_Vutukuri_resume.pdf"
-                download="Gnana Chandra Resume.pdf"
-                className="flex items-center gap-2"
-              >
-                <Download size={16} />
-                Resume
-              </a>
-            </Button>
-          </div>
+          <div className="hidden lg:block w-fit">
+            <ResumeButton className="text-orange-500 transition-all duration-300 border-2 border-orange-500 hover:bg-orange-500 hover:text-white" />
+           </div>
 
           {/* Mobile menu button */}
           <div className="lg:hidden">
@@ -149,21 +137,8 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
-            <div className="px-3 pt-4">
-              <Button
-                variant="outline"
-                className="w-full text-orange-500 transition-all duration-300 border-2 border-orange-500 hover:bg-orange-500 hover:text-white"
-                asChild
-              >
-                <a
-                  href="./Gnana_chandra_Vutukuri_Resume.pdf"
-                  download="Gnana Chandra Resume.pdf"
-                  className="flex items-center justify-center gap-2"
-                >
-                  <Download size={16} />
-                  Download Resume
-                </a>
-              </Button>
+            <div className="px-3 pt-4 w-fit">
+              <ResumeButton className="w-full text-orange-500 transition-all duration-300 border-2 border-orange-500 hover:bg-orange-500 hover:text-white" />
             </div>
           </div>
         </div>

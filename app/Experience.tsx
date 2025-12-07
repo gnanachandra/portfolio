@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { ResumeButton } from "./About";
 
 interface ExperienceItem {
   id: number;
@@ -306,19 +307,8 @@ const Experience = () => {
           <p className="mb-4 text-sm text-gray-600 sm:text-base sm:mb-6">
             Interested in my professional background?
           </p>
-          <Button
-            size="lg"
-            className="w-full text-white transition-all duration-300 shadow-lg bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 hover:shadow-xl sm:w-auto"
-            asChild
-          >
-            <a
-              href="./Gnana_Chandra_Vutukuri_resume.pdf"
-              download="Gnana Chandra Resume.pdf"
-              className="flex items-center justify-center gap-2 px-6 py-3"
-            >
-              Download Full Resume
-            </a>
-          </Button>
+                        <ResumeButton />
+          
         </div>
       </div>
     </div>

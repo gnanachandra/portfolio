@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import {
   Download,
   Github,
@@ -92,19 +93,7 @@ const About = () => {
                 </a>
               </Button>
 
-              <Button
-                variant="outline"
-                size="lg"
-                className="transition-all duration-300 border-2 border-gray-300 hover:border-gray-400 hover:bg-gray-50"
-                asChild>
-                <a
-                  href="./Gnana_Chandra_Vutukuri_resume.pdf"
-                  download="Gnana Chandra Resume.pdf"
-                  className="flex items-center gap-2">
-                  <Download size={18} />
-                  Download Resume
-                </a>
-              </Button>
+              <ResumeButton />
             </div>
           </div>
 
@@ -136,3 +125,29 @@ const About = () => {
 };
 
 export default About;
+
+
+export const ResumeButton = ({
+  className 
+} : {
+  className?: string;
+}) => (
+  <Button
+    variant="outline"
+    
+    className={cn(
+      "transition-all duration-300 border-2 border-gray-300 hover:border-gray-400 hover:bg-gray-50"
+    , className)}
+    asChild
+  >
+    <a
+      target="_blank"
+      href="https://storage.googleapis.com/gnanachandra/Gnana%20Chandra%20Vutukuri%20Resume.pdf"
+      download="Gnana Chandra Resume.pdf"
+      className="flex items-center gap-2"
+    >
+      <Download size={18} />
+      Resume
+    </a>
+  </Button>
+);
